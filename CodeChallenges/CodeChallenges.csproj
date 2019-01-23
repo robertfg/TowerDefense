@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{41FCBB5F-A40F-4157-A7B1-29ED32A12444}</ProjectGuid>
+    <ProjectGuid>{0F97AC95-A427-4853-AA09-1874B790D259}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TowerDefense</RootNamespace>
-    <AssemblyName>TowerDefense</AssemblyName>
+    <RootNamespace>CodeChallenges</RootNamespace>
+    <AssemblyName>CodeChallenges</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,21 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays.cs" />
+    <Compile Include="CheckValues.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Exceptions.cs" />
-    <Compile Include="Game - Copy %282%29.cs" />
-    <Compile Include="Game - Copy %283%29.cs" />
-    <Compile Include="Game - Copy.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="Invader - Copy %282%29.cs" />
-    <Compile Include="Invader - Copy.cs" />
-    <Compile Include="Invader.cs" />
-    <Compile Include="Level.cs" />
-    <Compile Include="Map.cs" />
-    <Compile Include="MapLocation.cs" />
-    <Compile Include="Path.cs" />
-    <Compile Include="Point.cs" />
+    <Compile Include="Frog - Copy %282%29.cs" />
+    <Compile Include="Frog - Copy %283%29.cs" />
+    <Compile Include="Frog - Copy.cs" />
+    <Compile Include="Frog.cs" />
+    <Compile Include="FrogStats.cs" />
+    <Compile Include="Polygon.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tower.cs" />
+    <Compile Include="RightTriangle.cs" />
+    <Compile Include="Ternary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
