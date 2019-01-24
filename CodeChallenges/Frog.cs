@@ -8,11 +8,11 @@ namespace CodeChallenges
 {
     public class Frog
     {
-        public int TongueLength { get; }
+        public int TongueLength { get; set; }
 
-        public Frog(int tongueLength)
+        /*public Frog(int tongueLength)
         {
             TongueLength = tongueLength;
-        }
+        }*/
     }
 }
