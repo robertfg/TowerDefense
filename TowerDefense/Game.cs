@@ -29,7 +29,8 @@ namespace TowerDefense
 
                 Invader[] invaders =
                 {
-                    new Invader(path),
+                    // Change one Invader to the new ShieldedInvader type
+                    new ShieldedInvader(path),
                     new Invader(path),
                     new Invader(path),
                     new Invader(path)

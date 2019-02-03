@@ -48,8 +48,22 @@ namespace TowerDefense
             _pathStep += 1;
         }*/
 
-        public void DecreaseHealth(int factor)
+        // To make polymorphic, convert to virtual class:
+        //public void DecreaseHealth(int factor)
+        public virtual void DecreaseHealth(int factor)
         {
+            // If you find yourself doing a lot of type checks, you should make the class polymorphic
+            //if ( this is ShieldedInvader )
+            //{
+            //    // Do something here
+            //}
+            //else
+            //{
+            //    Health -= factor;
+            //}
+
+            Console.WriteLine("Shot at and hit an invader!");
+
             Health -= factor;
         }
     }
