@@ -13,6 +13,7 @@ namespace CodeChallenges
             //Frog1 mike = new Frog1(5, 3);
 
             Frog[] frogs = new Frog[5];
+
             frogs[0] = new Frog();
             frogs[1] = new Frog();
             frogs[2] = new Frog();
@@ -24,6 +25,9 @@ namespace CodeChallenges
             frogs[2].TongueLength = 15;
             frogs[3].TongueLength = 20;
             frogs[4].TongueLength = 25;
+
+            /* I would need a new class, e.g., cohort, to represent a group of frogs
+             * to do what TowerDefense does in Game.cs with Path.   */
 
             /*Frog[] frogs = new Frog(
                 new[]
