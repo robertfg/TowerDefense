@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{41FCBB5F-A40F-4157-A7B1-29ED32A12444}</ProjectGuid>
+    <ProjectGuid>{B39953DA-3B48-45C4-912D-3400BF056937}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TowerDefense</RootNamespace>
-    <AssemblyName>TowerDefense</AssemblyName>
+    <RootNamespace>CodeChallenges4</RootNamespace>
+    <AssemblyName>CodeChallenges4</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,32 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exceptions.cs" />
-    <Compile Include="FastInvader.cs" />
-    <Compile Include="LongRangeTower.cs" />
-    <Compile Include="Scrap\Point 1.cs" />
-    <Compile Include="Scrap\Path 1.cs" />
-    <Compile Include="PowerfulTower.cs" />
-    <Compile Include="Scrap\Invader 3.cs" />
-    <Compile Include="Scrap\Game 2.cs" />
-    <Compile Include="Scrap\Game 3.cs" />
-    <Compile Include="Scrap\Game 1.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="Scrap\Invader 2.cs" />
-    <Compile Include="Scrap\Invader 1.cs" />
-    <Compile Include="Invader.cs" />
-    <Compile Include="Level.cs" />
-    <Compile Include="Map.cs" />
-    <Compile Include="MapLocation.cs" />
-    <Compile Include="Path.cs" />
-    <Compile Include="Point.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShieldedInvader.cs" />
-    <Compile Include="SniperTower.cs" />
-    <Compile Include="StrongInvader.cs" />
-    <Compile Include="Scrap\Tower 1.cs" />
-    <Compile Include="SuperTower.cs" />
-    <Compile Include="Tower.cs" />
+    <Compile Include="VocabularyWord.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

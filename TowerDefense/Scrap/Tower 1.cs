@@ -6,39 +6,53 @@ using System.Threading.Tasks;
 
 namespace TowerDefense
 {
-    class Tower
+    class Tower1
     {
-        // Convert private variables to protected for inheritance and polymorphism
-        protected virtual int Range { get; } = 1;
-        protected virtual int Power { get; } = 1;
-        protected virtual double Accuracy { get; } = 0.75;
+        private const int _range = 1;
+        private const int _power = 1;
+        private const double _accuracy = 0.75;
 
         private static readonly Random _random = new Random();
 
         private readonly MapLocation _location;
 
-        public Tower(MapLocation location)
+        public Tower1(MapLocation location)
         {
             _location = location;
         }
 
         public bool IsSuccessfulShot()
         {
-            return _random.NextDouble() < Accuracy;
+            //return Tower._random.NextDouble() < _accuracy;
+            return _random.NextDouble() < _accuracy;
         }
 
         public void FireOnInvaders(Invader[] invaders)
         {
+            /*int i = 0;
+            while(i < invaders.Length)
+            {
+                Invader invader = invaders[i];
+
+                i++;
+            }*/
+
+            /*for(int i=0; i < invaders.Length; i++)
+            {
+                Invader invader = invaders[i];
+
+            }*/
+
             foreach(Invader invader in invaders)
             {
-                if (invader.IsActive && _location.InRangeOf(invader.Location, Range))
+                if (invader.IsActive && _location.InRangeOf(invader.Location, _range))
                 {
                     if (IsSuccessfulShot())
                     {
-                        invader.DecreaseHealth(Power);
+                        invader.DecreaseHealth(_power);
                         if (invader.IsNeutralized)
                         {
-                            Console.WriteLine("Neutralized an invader at " + invader.Location + "!");
+                            Console.WriteLine("Neutralized an invader!");
                         }
                     }
                     else

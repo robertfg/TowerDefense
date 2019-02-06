@@ -9,37 +9,30 @@ namespace TowerDefense
     class Path
     {
         private readonly MapLocation[] _path;
-        //private readonly MapLocation[] path;
 
         public int Length => _path.Length;
 
         public Path(MapLocation[] path)
         {
             _path = path;
-            //this.path = path;
         }
 
         public MapLocation GetLocationAt(int pathStep)
         {
             return (pathStep < _path.Length) ? _path[pathStep] : null;
+        }
 
-            /*if (pathStep < _path.Length)
+        public bool IsOnPath(MapLocation location)
+        {
+            foreach(var pathLocation in _path)
             {
-                return _path[pathStep];
+                //if ( location == pathLocation)
+                if ( location.Equals(pathLocation) )
+                {
+                    return true;
+                }
             }
-            else
-            {
-                return null;
-            }*/
-
-            /*try
-            {
-                return _path[pathStep];
-            }
-            catch(IndexOutOfRangeException)
-            {
-                return null;
-            }*/
+            return false;
         }
     }
 }

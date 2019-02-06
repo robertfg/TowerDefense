@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace TowerDefense
 {
-    class Point
+    class Point1
     {
         // Properties
         public readonly int X;
         public readonly int Y;
 
         // Constructor
-        public Point(int x, int y)
+        public Point1(int x, int y)
         {
             X = x;
             Y = y;
@@ -41,12 +41,31 @@ namespace TowerDefense
         // Override GetHashCode:
         public override int GetHashCode()
         {
+            /* Generated automatically by VS:
+            var hashCode = 1861411795;
+            hashCode = hashCode * -1521134295 + X.GetHashCode();
+            hashCode = hashCode * -1521134295 + Y.GetHashCode();
+            return hashCode;*/
+
+            // Use a small prime number to get the hashcode:
+            // return X * 31 + Y;
+
+            // Better:
             return X.GetHashCode() * 31 + Y.GetHashCode();
         }
 
         // Methods
         public int DistanceTo(int x, int y)
         {
+            /*int xDiff = X - x;
+            int yDiff = Y - y;
+
+            int xDiffSquared = xDiff * xDiff;
+            int yDiffSquared = yDiff * yDiff;
+
+            return (int)Math.Sqrt(xDiffSquared + yDiffSquared);*/
+
+            // After you refactor:
             return (int)Math.Sqrt(Math.Pow(X-x, 2) + Math.Pow(Y-y, 2));
         }
 
